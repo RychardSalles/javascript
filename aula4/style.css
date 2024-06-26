@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+body{
+    background: rgb(212, 212, 26);
+    color: white;
+    font: normal 11pt Arial;
+}
+
+strong{
+    color: black;
+}
