@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+body{
+    font: normal 12pt Arial;
+    background-image: linear-gradient(to right, #E1E4FD, #6F717D)
+}
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    background-color: white;
+    border-radius: 26px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.39); /*sombra */
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+
+button{
+    font-size: 15pt;
+    padding: 15pt;
+    background-color: black;
+    color: white;
+}
+button:hover{
+    background-color: white;
+    color: black;
+}
+
+input{
+    width: 100px;
+    margin-top: 20px;
+}
+
+div#area{            /* botão 2*/
+    font: normal 15pt Arial;
+    background-color: blue;
+    color: white;
+    width: 111px;
+    height: 81px;
+    margin-top: 20px;
+    line-height: 70px;
+    text-align: center;
+}
+
+#res{
+    margin-top: 20px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de mensagens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Interagido com botôes</h1>
+            <button onclick="clicar1()">Interaja</button>
+            <div id="area" onclick="clicar()" onmouseenter="entrou()"  onmouseout="saiu()">interaja</div> <!--botão mais interativo-->
+            <input type="number" name="txn1" id="txn1"> +
+            <input type="number" name="txn2" id="txn2">
+            <input type="button" value="somar" onclick="somar()">
+            <div id="res">Resultado</div>
+    </main>
+
+    <script>
+        function clicar1() { //botão criado pela tag button
+            var a = document.getElementById('area')
+            alert('Você clicou no botão!')
+        }
+        function clicar(){
+            var a = document.getElementById('area')
+            a.document = alert('Você clicou no segundo botâo!')
+        }
+        function entrou(){
+            var a = document.getElementById('area')
+            a.innerText = 'Entrou'
+            a.style.background = 'red'
+        }
+        function saiu(){
+            var a = document.getElementById('area')
+            a.innerText = 'Saiu'
+            a.style.background = 'blue'
+        }
+
+        function somar(){
+            var tn1 = document.getElementById('txn1')
+            var tn2 = document.getElementById('txn2')
+            var res = document.getElementById('res')
+            var n1 = Number (tn1.value)
+            var n2 = Number (tn2.value)
+            var s = n1 + n2
+            res.innerText = `A soma entre ${n1} e ${n2} é igual a ${s}!`
+        }
+    </script>
+</body>
+</html>
